@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Вышивка с любовью</title>
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&amp;family=Open+Sans&amp;display=swap" rel="stylesheet"/>
+<style>
+        
+        h1 {
+            font-family: 'Yeseva One', cursive;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-family: 'Yeseva One', cursive;
+            font-size: 1.8em;
+        }
+        .btn {
+            background-color: #6c7453;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            font-size: 1em;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+        .about img {
+            max-width: 100%;
+            border-radius: 12px;
+        }
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            align-items: start;
+        }
+        .item {
+            padding: 16px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        footer {
+            
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+    
+
+body, p, li, span, div, section {
+  color: #4a3b2a;
+}
+
+p, button, .order-instructions {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.example-item {
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.example-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: none;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f6f3ec;
+  background-image: url('flower_left_transparent.png'), url('flower_right_transparent.png');
+  background-repeat: repeat-y, repeat-y;
+  background-position: left top, right top;
+  background-attachment: scroll, scroll;
+  opacity: 1;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<section style="background-color: #f6f3ec;  text-align: center;">
+<h1>by_lalexav — с любовью на память о самом важном</h1>
+<p>Индивидуальные метрики, именные подарки и уютный декор для особенных моментов</p>
+<a class="btn" href="#examples">Перейти в каталог</a>
+</section>
+
+
+<section class="about" style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; background-color: #f6f3ec">
+<div style="flex: 1; min-width: 280px">
+<h2>О мастерской</h2>
+<p> Приветствую всех на моем сайте! Меня зовут Саша. Я создаю вышивки для самых трогательных событий — рождения, крестин, дня свадьбы и других памятных моментов. А иногда просто продаю декоративные вышивки для украшения вашего дома с произвольными сюжетами! Каждая работа оформляется с любовью и вниманием к деталям.</p>
+</div>
+<img alt="вышивка с цветами" onclick="openImageModal(this.src)" img src="flowers.JPG" style="max-width: 380px; flex-shrink: 0;cursor:zoom-in;transition:0.3s;"/>
+</section>
+
+
+<section class="" id="prices" style="background-color: #f6f3ec">
+<h2>Сроки и цены</h2>
+<p>Изготовление метрики занимает от 7 до 21 дней в зависимости от сложности работы и количества заказов. Стоимость индивидуальной метрики 2500 ₽. Возможна доставка по России, которая оплачивается отдельно.</p>
+</section>
+
+<section class="order-instructions" id="how-to-order" style="background-color: #f6f3ec">
+<h2>Порядок заказа</h2>
+<p>После оформления заказа я связываюсь с вами в течение 24 часов по оставленным вами контактам. В случае заказа индивидуальной метрики вы можете прислать мне понравившиеся примеры работ (моих или из интернета), если примеров нет, я учитываю ваши пожелания (например, лисичка, кошечка, цветочки и т.п.) и делаю эскиз самостоятельно. Также учитываю ваши пожелания по цветовой гамме. После согласования эскиза происходит оплата метрики. Когда я завершаю работу, я присылаю вам фотографии. В случае, если вас все устраивает, мы согласовываем доставку (оплачивается отдельно).</p>
+</section>
+
+
+<section class="" id="examples" style="background-color: #f6f3ec">
+<h2>Примеры работ</h2>
+<div class="catalog">
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика Стелла" onclick="openImageModal(this.src)" img src="stella.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “Стелла”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика Ростислав" onclick="openImageModal(this.src)" img src="rostislav.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “Ростислав”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика Дион" onclick="openImageModal(this.src)" img src="dion.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “Дион”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика Есения" onclick="openImageModal(this.src)" img src="esenia.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “Есения”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика Лев" onclick="openImageModal(this.src)" img src="lev.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “Лев”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика Лиана" onclick="openImageModal(this.src)" img src="liana.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “Лиана”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика Ника" onclick="openImageModal(this.src)" img src="nika.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “Ника”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика Радочка" onclick="openImageModal(this.src)" img src="radochka.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “Радочка”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика София" onclick="openImageModal(this.src)" img src="sofia.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “София”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика Алиса и Есения" onclick="openImageModal(this.src)" img src="dvoe1.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “Алиса и Есения”</p>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="метрика София и Василиса" onclick="openImageModal(this.src)" img src="dvoe.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Именная метрика “София и Василиса”</p>
+</div>
+</div>
+
+<div style="text-align: center; margin-top: 40px">
+<button class="btn" data-add="custom">Заказать индивидуальную метрику</button>
+</div>
+</section>
+
+
+<section class="" id="available" style="background-color: #f6f3ec">
+<h2>В наличии</h2>
+<div class="catalog">
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="вышивка Гусь" onclick="openImageModal(this.src)" img src="goose.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Вышивка “Гусь” — <strong>1000 ₽</strong></p>
+<button class="btn add-to-cart" data-add="goose">В корзину</button>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="вышивка Цветы" onclick="openImageModal(this.src)" img src="flowers.JPG" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Вышивка “Цветы” — <strong>1000 ₽</strong></p>
+<button class="btn" data-add="flowers">В корзину</button>
+</div>
+<div class="item" style="background-color: white; padding: 1rem; border-radius: 6px">
+<img alt="вышивка Все будет" onclick="openImageModal(this.src)" img src="vse_budet.jpg" style=";cursor:zoom-in;transition:0.3s;"/>
+<p>Вышивка “Все будет” — <strong>1000 ₽</strong></p>
+<button class="btn" data-add="flowers">В корзину</button>
+</div>
+</div>
+</section>
+<div id="cart-icon" onclick="toggleCart()">
+</div>
+<footer style="background-color: #f6f3ec; font-family: 'Open Sans', sans-serif padding: 60px 20px; max-width: 1000px; margin: auto">
+        © 2025 by_lalexav. Все права защищены.
+</footer>
+
+<div class="cart-icon" onclick="toggleCartPopup()" style="cursor:pointer;position:fixed;bottom:30px;right:30px;z-index:10001;">
+<svg fill="none" height="48" stroke="#6c7453" stroke-width="2" viewbox="0 0 24 24" width="48">
+<path d="M6 6h15l-1.5 9h-13z"></path>
+<circle cx="8" cy="21" r="1.5"></circle>
+<circle cx="18" cy="21" r="1.5"></circle>
+</svg>
+
+<span id="cart-count" style="position:absolute;top:-12px;right:-10px;background-color:#6c7453;color:white;border-radius:40%;padding:1px 6px;font-size:14px;">0</span>
+</div>
+
+<div class="cart-popup" id="cart-popup" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%, -50%);width:80vw;max-width:800px;max-height:90vh;overflow:auto;background-color:#f5f3ea;border:2px solid #ddd;padding:30px;border-radius:16px;box-shadow:0 8px 40px rgba(0,0,0,0.2);z-index:10000;font-family:'Open Sans', sans-serif;color:#3a2e2a;font-size:16px;line-height:1.5;">
+
+<div onclick="document.getElementById('cart-popup').style.display='none';" style="position:absolute;top:10px;right:15px;font-size:30px;cursor:pointer;color:#6c7453;">×</div>
+<h3>Корзина</h3>
+<div id="cart-items" style="font-family:'Open Sans', sans-serif;font-size:16px;color:#3a2e2a;"></div>
+
+<p><strong>Итого:</strong> <span id="cart-total">—</span></p>
+<form id="order-form">
+<input name="name" placeholder="Ваше имя" required="" style="font-family:'Open Sans', sans-serif;font-size:16px;color:#3a2e2a;border:1px solid #ccc;border-radius:6px;padding:8px;width:100%;margin-bottom:10px;" type="text"/>
+<input name="phone" placeholder="Телефон" required="" style="font-family:'Open Sans', sans-serif;font-size:16px;color:#3a2e2a;border:1px solid #ccc;border-radius:6px;padding:8px;width:100%;margin-bottom:10px;" type="tel"/>
+<textarea name="comment" placeholder="Комментарий (удобный способ связи, детали)" style="font-family:'Open Sans', sans-serif;font-size:16px;color:#3a2e2a;border:1px solid #ccc;border-radius:6px;padding:8px;width:100%;margin-bottom:10px;"></textarea>
+<button style="background-color:#6c7453;color:white;border:none;padding:10px 20px;border-radius:8px;font-family:'Open Sans', sans-serif;font-size:14px;" type="submit">Оформить заказ</button>
+</form>
+</div>
+<div id="cart-notification" style="display:none;position:fixed;top:20px;left:50%;transform:translateX(-50%);background-color:#6c7453;color:white;padding:12px 24px;border-radius:8px;z-index:10000;font-family:'Open Sans', sans-serif;font-size:14px;">
+  Товар добавлен в корзину
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let cart = [];
+
+  function addToCart(name, price) {
+    cart.push({ name, price });
+    updateCart();
+    showNotification("Товар добавлен в корзину");
+  }
+
+  function removeFromCart(index) {
+    cart.splice(index, 1);
+    updateCart();
+  }
+
+  function updateCart() {
+    const cartItems = document.getElementById("cart-items");
+    const cartCount = document.getElementById("cart-count");
+    const cartTotal = document.getElementById("cart-total");
+    if (!cartItems || !cartCount || !cartTotal) return;
+
+    cartItems.innerHTML = '';
+    let total = 0;
+
+    cart.forEach((item, index) => {
+      const div = document.createElement("div");
+      div.innerHTML = `
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+          <span style="flex:1;">${item.name}</span>
+          <span style="margin-right:10px;">${item.price}</span>
+          <button onclick="removeFromCart(${index})"
+            style="background-color:transparent;color:brown;border:none;cursor:pointer;font-size:14px;">
+            удалить
+          </button>
+        </div>
+      `;
+      cartItems.appendChild(div);
+      const numericPrice = parseInt(item.price.replace(/[^0-9]/g, ''));
+      total += isNaN(numericPrice) ? 0 : numericPrice;
+    });
+
+    cartCount.textContent = cart.length;
+    cartTotal.textContent = total > 0 ? total + " ₽" : "—";
+  }
+
+  function showNotification(message) {
+    const note = document.getElementById("cart-notification");
+    if (!note) return;
+    note.textContent = message;
+    note.style.display = "block";
+    setTimeout(() => {
+      note.style.display = "none";
+    }, 2000);
+  }
+
+  document.querySelectorAll("[data-add]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const type = btn.dataset.add;
+      if (type === "custom") {
+        addToCart("Индивидуальная метрика", "2500 ₽");
+      } else if (type === "goose") {
+        addToCart("Гусь", "1000 ₽");
+      } else if (type === "flowers") {
+        addToCart("Цветы", "1000 ₽");
+      }
+    });
+  });
+
+  const orderForm = document.getElementById("order-form");
+  if (orderForm) {
+    orderForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = this.name.value.trim();
+      const phone = this.phone.value.trim();
+      const comment = this.comment.value.trim();
+      const items = cart.map(i => i.name + " (" + i.price + ")").join(", ");
+      const total = document.getElementById("cart-total").textContent;
+
+      const text = `🧵 Новый заказ:%0A👤 Имя: ${name}%0A📞 Телефон: ${phone}%0A🛍 Товары: ${items}%0A💬 Комментарий: ${comment}%0A💰 Сумма: ${total}`;
+
+fetch("https://formspree.io/f/xkgrnqdk", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name: name,
+    phone: phone,
+    comment: comment,
+    items: cart.map(item => item.name + " (" + item.price + ")").join(", "),
+    total: total
+  })
+})
+        .then(response => {
+          showNotification("✅ Заказ отправлен");
+          cart = [];
+          updateCart();
+          this.reset();
+        })
+        .catch(error => {
+          showNotification("Ошибка отправки заказа");
+        });
+    });
+  }
+
+  const cartIcon = document.querySelector(".cart-icon");
+  if (cartIcon) {
+    cartIcon.addEventListener("click", () => {
+      const popup = document.getElementById("cart-popup");
+      popup.style.display = "block";
+    });
+  }
+
+  // Экспорт функции в глобальный контекст
+  window.removeFromCart = removeFromCart;
+});
+</script>
+<div id="image-modal" style="display:none;position:fixed;top:0;left:0;width:100vw;height:100vh;
+background:rgba(0,0,0,0.8);z-index:10000;justify-content:center;align-items:center;">
+<span onclick="closeImageModal()" style="position:absolute;top:30px;right:40px;font-size:40px;color:white;cursor:pointer;">×</span>
+<img id="modal-image" onclick="openImageModal(this.src)" src="" style="max-width:90%;max-height:90%;box-shadow:0 0 20px rgba(0,0,0,0.5);border-radius:12px;;cursor:zoom-in;transition:0.3s;"/>
+</div>
+<script>
+function openImageModal(src) {
+  const modal = document.getElementById("image-modal");
+  const modalImg = document.getElementById("modal-image");
+  modalImg.src = src;
+  modal.style.display = "flex";
+}
+function closeImageModal() {
+  document.getElementById("image-modal").style.display = "none";
+}
+document.addEventListener("click", function(e) {
+  const modal = document.getElementById("image-modal");
+  if (e.target === modal) {
+    closeImageModal();
+  }
+});
+</script>
+</body>
+</html>
